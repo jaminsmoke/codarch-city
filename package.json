@@ -1,0 +1,31 @@
+{
+  "name": "codarch-city",
+  "private": true,
+  "version": "0.1.0",
+  "description": "3D city simulation of local repo architecture from Codarch snapshots",
+  "license": "MIT",
+  "author": "jaminsmoke",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaminsmoke/codarch-city.git"
+  },
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @codarch-city/desktop",
+    "build": "npm run build --workspace @codarch-city/desktop",
+    "start": "npm run start --workspace @codarch-city/desktop",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "allowScripts": {
+    "electron@37.10.3": true,
+    "esbuild@0.25.12": true,
+    "esbuild@0.28.2": true
+  }
+}
