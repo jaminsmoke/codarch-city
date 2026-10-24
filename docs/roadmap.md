@@ -76,3 +76,4 @@ Al cerrar una fase: cambia su fila a **hecho**, pon fecha en el archivo de fase,
 
 - **2026-10-24** — Fase 0 implementada; docs + roadmap. Pendiente revisión de usuario.
 - **2026-10-24** — Fix `npm run dev` si el puerto 5175 está ocupado (`strictPort: false`).
+- **2026-10-24** — Sin DevTools automático; prioriza `.codarch/snapshot.cc.json`; botón PyTalktoWrite; repo público MIT https://github.com/jaminsmoke/codarch-city
